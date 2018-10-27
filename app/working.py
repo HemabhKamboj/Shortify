@@ -5,9 +5,9 @@ import shutil
 
 bucket='shortify1'
 
-dir = 'b/'
-video = 'test_video2.mkv'
-video_link = 'https://www.youtube.com/watch?v=WANWx2C8Jak'
+dir = 'c/'
+video = 'test_video3.mkv'
+
 
 if os.path.exists(dir):
     shutil.rmtree(dir)
@@ -15,8 +15,8 @@ os.makedirs(dir)
 
 client = boto3.client('rekognition')
 
-cap = cv2.VideoCapture(video_link)
-i = 1000
+cap = cv2.VideoCapture(video)
+i = 100
 m = 1
 ret = True
 
