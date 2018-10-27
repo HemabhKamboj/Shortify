@@ -70,22 +70,73 @@
           </div>
       </div> -->
       <div class="row">
+        <div class="col-lg-12" style=" margin-bottom: 50px;">
+            <!-- <h1>Shortify</h1> -->
+            <!-- <img src="../../assets/img/Logo.PNG" alt="Shortify Logo"> -->
+            <div class="card card-chart">
+                <!-- <div class="card-header card-header-warning">
+                    <div class="ct-chart" id="websiteViewsChart"></div>
+                </div> -->
+                <div class="card-body" style="margin-left:500px;">
+                    <img src="../../assets/img/Logo.PNG" width="auto;" alt="Shortify Logo">
+                </div>
+                <!-- <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">access_time</i> campaign sent 2 days ago
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- <div class="col-md-4">
+            <div class="card card-chart">
+                <div class="card-header card-header-warning">
+                    <div class="ct-chart" id="websiteViewsChart"></div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Email Subscriptions</h4>
+                    <p class="card-category">Last Campaign Performance</p>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">access_time</i> campaign sent 2 days ago
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="col-md-4">
+            <div class="card card-chart">
+                <div class="card-header card-header-danger">
+                    <div class="ct-chart" id="completedTasksChart"></div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Completed Tasks</h4>
+                    <p class="card-category">Last Campaign Performance</p>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">access_time</i> campaign sent 2 days ago
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+      <div class="row">
         <div class="col-lg-6 col-md-12">
             <div class="card">
                 <div class="card-header card-header-tabs card-header-primary">
                     <div class="nav-tabs-navigation">
                         <div class="nav-tabs-wrapper">
-                            <span class="nav-tabs-title">Tasks:</span>
+                            <span class="nav-tabs-title">Tab:</span>
                             <ul class="nav nav-tabs" data-tabs="tabs">
                                 <li class="nav-item">
                                     <a mat-button class="nav-link active" href="#profile" data-toggle="tab">
-                                        <i class="material-icons">bug_report</i> Bugs
+                                        <i class="material-icons">bug_report</i> Video
                                         <div class="ripple-container"></div>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a mat-button class="nav-link" href="#messages" data-toggle="tab">
-                                        <i class="material-icons">code</i> Website
+                                        <i class="material-icons">code</i> Analysis
                                         <div class="ripple-container"></div>
                                     </a>
                                 </li>
@@ -94,7 +145,7 @@
                                         <i class="material-icons">cloud</i> Server
                                         <div class="ripple-container"></div>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -102,9 +153,45 @@
                 <div class="card-body">
                     <div class="tab-content">
                         <div class="tab-pane active" id="profile">
-                                <iframe width="735" height="560"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                </iframe>
+                                <!-- <iframe width="735" height="560" -->
+                                <!-- src="https://www.youtube.com/watch?v=FEnwM-iDb2g&index=2&list=PLEbnTDJUr_IeHYw_sfBOJ6gk5pie0yP-0"> -->
+                                <!-- </iframe> -->
+                                <div id="video-brdr">
+                                    <video width="735" height="560" controls>
+                                            <source src="../../assets/original.mp4" type="video/mp4">
+                                            
+                                        
+                                    </video>
+                                    <!-- <video src="../../assets/final2.avi" controls="controls"> </video> -->
+                                </div>
+                                <!-- <form>
+                                    <input type="text" placeholder="Enter the URL">
+                                     <button>Submit</button> -->
+                                    <!-- <input type="button" name="submit" value="Submit"
+                                        onclick="processFormData();" />
+                                </form> -->
+                                <!-- <form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+                                    <label for="url">URL</label>
+                                    <input type="text" name="url" id="url" ngModel>
+                                  
+                                    <button type="submit">Submit</button>
+                                  </form> -->
+
+                                  <div class="card-body">
+                                    <!-- <h4 class="card-title">Daily Sales</h4> -->
+                                    <!-- <p class="card-category"> -->
+                                        <!-- <span class="text-success"><i class="fa fa-long-arrow-up"></i> 65% </span> time saved.</p> -->
+                                        <form class="form-inline">
+                                           
+                                            <div class="form-group col-xs-12 mb-4">
+                                              <label for="inputPassword2" class="sr-only">Video URL</label>
+                                              <input type="text" class="form-control" id="inputPassword2" placeholder="Put the URL of Video here">
+                                            </div>
+                                            <div style="margin-left:20px;">
+                                            <button type="submit" class="btn btn-primary mb-2">Summarize My Video</button>
+                                        </div>
+                                          </form>
+                                </div>
                             <!-- <table class="table">
                                 <tbody>
                                     <tr>
@@ -323,15 +410,15 @@
                     <div class="card-header card-header-tabs card-header-primary">
                         <div class="nav-tabs-navigation">
                             <div class="nav-tabs-wrapper">
-                                <span class="nav-tabs-title">Tasks:</span>
+                                <span class="nav-tabs-title">Tab:</span>
                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                     <li class="nav-item">
                                         <a mat-button class="nav-link active" href="#profile" data-toggle="tab">
-                                            <i class="material-icons">bug_report</i> Bugs
+                                            <i class="material-icons">bug_report</i> Summarized Video
                                             <div class="ripple-container"></div>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a mat-button class="nav-link" href="#messages" data-toggle="tab">
                                             <i class="material-icons">code</i> Website
                                             <div class="ripple-container"></div>
@@ -342,7 +429,7 @@
                                             <i class="material-icons">cloud</i> Server
                                             <div class="ripple-container"></div>
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -355,11 +442,20 @@
                                     </iframe> -->
                                 <div id="video-brdr">
                                     <video width="735" height="560" controls>
-                                            <source src="../../assets/videoplayback.mp4" type="video/mp4">
+                                            <source src="../../assets/final2.mp4" type="video/mp4">
                                             
                                         
                                     </video>
+                                    <!-- <video src="../../assets/final2.avi" controls="controls"> </video> -->
                                 </div>
+
+                                <!-- <div id="tip">
+                                    <div class="stop">
+                                    <marquee loop="1" direction="right" behavior="slide">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                    </marquee>
+                                    </div>
+                                    </div> -->
                                         
                                 <!-- <table class="table">
                                     <tbody>
@@ -578,13 +674,29 @@
       <div class="row">
           <div class="col-md-4">
               <div class="card card-chart">
-                  <div class="card-header card-header-success">
-                      <div class="ct-chart" id="dailySalesChart"></div>
-                  </div>
+                 
                   <div class="card-body">
-                      <h4 class="card-title">Daily Sales</h4>
-                      <p class="card-category">
-                          <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+                      <h4 class="card-title">First Five Important Shots</h4>
+                    
+                          <div style="margin: 10px 0 30px 0;">
+                            <img src="../../assets/final/34.jpg" height="325px" width="475px" alt="Shortify Logo">
+                          </div>
+                          <hr>
+                          <div style="margin: 10px 0 30px 0;">
+                            <img src="../../assets/final/54.jpg" height="325px" width="475px" alt="Shortify Logo">
+                          </div>
+                          <hr>
+                          <div style="margin: 10px 0 30px 0;">
+                            <img src="../../assets/final/84.jpg" height="325px" width="475px" alt="Shortify Logo">
+                          </div>
+                          <hr>
+                          <div style="margin: 10px 0 30px 0;">
+                            <img src="../../assets/final/107.jpg" height="325px" width="475px" alt="Shortify Logo">
+                          </div>
+                          <hr>
+                          <div style="margin: 10px 0 30px 0;">
+                            <img src="../../assets/final/124.jpg" height="325px" width="475px" alt="Shortify Logo">
+                          </div>
                   </div>
                   <div class="card-footer">
                       <div class="stats">
@@ -593,23 +705,33 @@
                   </div>
               </div>
           </div>
-          <div class="col-md-4">
-              <div class="card card-chart">
-                  <div class="card-header card-header-warning">
-                      <div class="ct-chart" id="websiteViewsChart"></div>
-                  </div>
-                  <div class="card-body">
-                      <h4 class="card-title">Email Subscriptions</h4>
-                      <p class="card-category">Last Campaign Performance</p>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">access_time</i> campaign sent 2 days ago
-                      </div>
-                  </div>
-              </div>
+          <div class="col-md-8">
+            <div class="card">
+                <div class="card-header card-header-danger">
+                    <h4 class="card-title">Summarized Notes</h4>
+                    <p class="card-category">These are generated from the video frames you're watching</p>
+                </div>
+                <div class="card-body">
+                    <div id="typography">
+                        <div class="card-title">
+                            <h2>What your video is saying?</h2>
+                        </div>
+                        <div class="row">
+                            <div style="padding: 10px 30px 10px 30px;">
+                                <p style="font-family:'Courier New', Courier, monospace; font-size: 20px;">
+                                    discussing about Big O or Omega theta we have seen that there is a function which is growing like this which is the actual time taken by the algorithm and know n is the input size but in practice even though we are saying that this is the time taken by the algorithm to exist but when you write it into a program and execute it it this this is not the real time this is just an approximation it means that if a Foreman increases for the algorithm for the program time increases if a foreign degrees for the algorithm for the program time decreases which means this is not actually the real time it is just an approximation and now let's see how to find out this F of n which means what is the approximate time taken by an algorithm to finish that is just approximation right so how to approximate the time taken by an algorithm so in order to find it out first of all we should understand that there are two types of algorithms okay so algorithms are of two types one is iterate to algorithm and other is recursive okay so coming to iterative algorithm the algorithm should look like this so if I have for I equal to 1 to N so we are doing something so max of some max of a comma B something like this right so if you are doing it in a for loop or while loop and dowhile loop then it is generally called iterative algorithm and because your algorithm is like this if there is a function a which takes an input of size n and it is again computing the value in terms of this same function a something like this so if a is calling itself then it is called recursive and if there is no function calling and if it is having a for loop or while loop then it is called iterative function it is worth noting that any program that could be written using iteration could be written using recursion any requesting can be converted to iteration therefore both are equivalent in par so nothing is no more powerful than the other that is one thing you should note and the second thing is how to analyze these programs they basically differ so in order to analyze such an intuitive program we have to count number of times a loop is going to get executed one thing and if you have to count the iterative program I mean if you have to find out the time taken by an iterative program we use sorry recursive program we use recursive equations which means we write a function of F in terms of function of n by 2 it is a fortune and it is F of n by 2 so both of them the analysis wise both are different the power wise both are same but analysis wise both are different in case if the algorithm does not contain either iteration or recursive recursion then it means that there is no dependency on the of the running time on the input size which means whatever is the input size the running time is going to be a constant value so if there is no iteration or recursion inside the program you need not worry about the time at all it is going to be constant time so for such programs we write or drop one or draw one represents constant time let us now see all the examples of version of some examples of iteration fro iterative programs which will give us a some some depth about to know how to analyze this see the first example in this example in this algorithm we have an integer I and we have a for loop and for loop is ready one more thing whatever code I am writing it is not corresponding to the syntax of any programming language you can just consider it as a general English ok so there is an integer ID for I equal to 1 to n printf bravi how many times this name will be printed so how it will be printed is for I equal to 1 I equal to I equal to 1 to N therefore for I equal to 1 to n which means total n times this program this line will be printed right therefore I say that the complexity of this earlier means order of em okay in case if I have something like this instead of this only n if I have again int I comma J I have it and I have for J equal to 1 to N to printf Ravi right then how does it work so this one is going to auto loop is going to run n times and for every time outer loop runs inner loop runs and dimes which means totally it will get executed n square times then in this case the time complexity is going to be order of n square if you have one more loop you know in nested loop then again it is going to be order of n cube that can be extended see this this in this question is important this has been asked in gate 1991 so I have just changed the program variant ask this exactly printf Ravi I just changed it now see how many times this while loop is going to get executed there is there is I and J two variables and then while s is less than or equal to n which means s is going to start with 1 and it is going to go till you know the point where it s crosses n so how is i incrementing I is getting incremented in steps of 1 and how is just getting incremented every time you enter the loop s is going to get incremented exactly by a value of I which means the increment in I is linear but the increment in years is actually depends on I let us see how these two I and s are getting incremented initially I is 1 and s is 1 right so when it enters one time how much will I be incremented by 1 and how much will s be incremented s equal to s plus I which means whatever is this whatever is yes to that you have to add height which means these two will be added and we are going to make it 3 right and then this is second time and again one more time and it enters no I is going to be incremented by 1 and s is going to be incremented by whatever is the value so s value plus I which is 6 and again it is going to be incremented by 1 i but then s is going to be incremented by 6 plus 4 which is 10 so on so maybe maybe 2 one more time 515 one more time 621 so on right now when is this this thing going to stop when is the center loop going to stop the center loop is going to stop whenever s value reaches a point where the value of s is greater than M so whenever s reaches a value which is greater than n ok so if you cross the value of n then it is going to stop so let us say I do not know how many times you know it is going to get aggravated let me say K by the time we reach K K iterations I mean I am saying that this while loop is going to be stopped of the K iterations and after K iterations the value of s has to be greater than n that is what I say therefore what will be the value of years after K iterations that is what we had to find out now if you see the value of s how it is increasing is for I equal to 1 s equal to 1 for I equal to 2 s equal to 3 so if you observe this it is nothing but sum of the first two national numbers is s venue which is nothing but 3 and when I when I equal to 3 s value is sum of the first three natural numbers and when I equal to 4 s value is sum of the first four natural numbers when I equal to 5 s value is some of the first by natural numbers see then I equal to 1 it is 1 and when I equal to 2 s value is 1 plus 2 which is 3 and when I equal to 3 s values 6 1 plus 2 plus 3 when I equal to 4 s value is 1 plus 2 Plus 3 plus 4 10 right which means by by the time I reaches K as well you will be some of natural numbers which means s value will be K into K plus 1 by 2 by the time I reach SK s value will be some of us care natural numbers which is K into K plus 1 by 2 now if this loop has to stop then K into K plus 1 by 2 has to be greater than n so from this equation is clear that they said I will get a function in terms of K square K square plus K by 2 and they said I get a function of n which means the number of times I get executed that is K is actually order of root n ok therefore this this loop will get executed in data in order of root n times not read this example first for I equal to 1 I equal to 1 I square less than or equal to n I plus plus printf Ravi how many times this will be printed is I is going to run from eyes no I Square till I square is going to be less than or equal to n so one other way of writing this is instead of writing I square is less than or equal to n we could write I is less than or equal to root n therefore this loop will run from for I equal to 1 2 root n which is nothing but this one will be this statement will be executed exactly root n times therefore the total number of times this one is going to get executed is root n so the time complexity is order of root M right and you say in this in this case you should observe one thing is the best case is root N and the worst case is root N and even the average case is Rutten therefore it is even better if you write data of root n it does not make any difference either you write Big O or theta for such examples it does not make any difference in case if there is any break statement depending on something inside the loop then we could have best case worst case and everything okay so look at this one next this is interesting we have ijk n variables and this outer for loop is running for I equal to 1 to N which means this outer for loop will run totally n times and the energy loop this one is running from J equal to 1 to Y which means this one will run this number of times this inner for loop will execute depends on the value of I and the innermost for loop this one it is running from for k equal to 1 to hundred which means the number of times the innermost loop exits is independent of I and J so it is a constant so whatever happens every time you get into this J do you will execute this 100 times okay so how to analyze this is just see what happens what what is the value of Phi and for each value of Phi how many times this one will be printed that that you know that way we could actually unroll the loops so I'm going to say initially if I equal to 1 if I equal to 1 how many times will J loop be executed and how many times will if will ke roop be executed in total so J loop will be executed exactly for J equal to 1 to I which means only one time and K loop will be executed exactly 100 times for each J value so J is executing one time and for every time K will be executed 100 times therefore K will be executed 100 times in total market now for I equal to 2 for I equal to 2 how many times J will be created a loop will run from J equal to 1 to 2 isn't it for J equal to 1 to 2 means it is going to be executed 2 times J is going to be exhibited two times and this in the loop this is going to get executed 100 times for each execution of J which means K loop will execute 100 times for every time J is getting executed how many times J is getting executed two times therefore K is getting executed 2 in 200 times therefore this printf is going to be printed 200 times now for I equal to 3 let us see what happens for I equal to 3 for I equal to 3 J is going to get executed exactly for J equal to 1 to 3 which means 3 times 3 times and K is getting executed the number of times K K will get executed is for every value of J it will get get executed three times which means J is taking three times and the K will acute hundred times for every value of J which is nothing but 300 times right so now coming to ie equal to four what happens is for I equal to four J will get executed for I equal to 1 to 4 which means 4 times and K will get executed 100 times for every value of J which means K will get executed for in 200 times and for I equal to 5 J will take 5 values which means J will get executed five times by because J is from 1 to I and for every time you get into J K will get executed 100 times which means 5 into 100 right so on for I equal to n J will get executed n times by because J is going to take values from 1 to N and for every time J gets executed K will get executed 100 times and J is getting exited n times therefore it is and in 200 so if you take the total number of times this printf is going to be printed it is 100 plus 200 plus 300 plus so on plus and in 100 so total number of times this printf is getting executed in 100 plus 2 into 100 plus 3 in 200 plus so on plus n in 200 so if I take out 100 as common then what do I get 1 plus 2 Plus 3 plus so on plus CN which is nothing but 100 into n into n plus 1 by 2 so which is nothing but order of n square right see this example there are variables ijk N and outer for loop is running for I equal to 1 to n which means outer for loop will run n times and for every value of y in the J loop will execute for J equal to 1 to I square which means the number of times this J loop will exude depends on the value of v if I equal to 1 J loop will execute 1 if I equal to 2 J loop will execute 4 times which means J value is depending on I so whenever there is a dependency like this you have to unroll it which means you know what what is unrolling is for every value of file you have to check how many times it is going to get executed in case if there is anything again a dependency again you have to unload it for where every value of v for every value of j how many times it is going to get executed just see the dependency here the innermost K loop K loop is executing k is no case from 1 to N by 2 which means K is not actually depending on I or J and K is the independent loop therefore you need not allow unroll J so how to solve such equation is C I is executing from 1 to n which means n times and J is executing for every value of I I know 1 to I square and K is exiting 1 to N by 2 then how to solve this is for I whenever I equal to 1 then J is going to get executed from J equal to 1 to I square which means 1 to 1 J is going to exhibited only one time and for every value of j k is going to occur n by two times and since J is going to be occluded only one time therefore the innermost K loop is going to exhibited n by 2 into 1 times 4 I equal to 2 J is going to get executed from 1 to I square which means I square is nothing but 4 therefore J is going to get executed 4 times and for every execution of J for every time J gets executed K is going to get executed n by 2 times therefore total number of times K is going to executed is n by 2 into 4 for I equal to 3 J is going to get executed 9 times and for every time J gets executed K is going to get executed n by 2 therefore total number of times K gets executed is n by 2 for every time for each J and there are nine edges there for nine into n by 2 so on for I equal to en J gets executed n square times and for every execution of J K will get executed n by 2 times therefore n by 2 into n square now the total number of times this printf will be printed is this ray will be printed in the total number of times K getting executed therefore what is that number n by 2 into 1 plus n by 2 into 4 plus n by 2 into 9 plus so on plus n by 2 into n square so if you pull out n by 2 as common then what do I get 1 plus 4 plus 9 plus so on plus n square so it is nothing but n by 2 into n into n plus 1 into 2 n plus 1 by 6 isn't it sum of first n square natural numbers some of you know some of the squares of first n natural numbers it is nothing but n index plus 1 into 2 n by 2 so you could either even write it as order of the leap more significant term n into n into n into n which is nothing but n power 4 so always remember have a function as f of n equal to n power k plus n power k minus 1 plus so on you could write it as order of and power K which means n power K can be used to bond this function tightly okay so in this in this case it is going to be order of n power 4 okay see how is I going to be non see this example I is one from I I is going from 1 to N and I is incremented not in steps of 1 it is getting incremented no doubled every time which means here the increment is not linear it is going to be multiplied with 2 every time then how many times will it get executed is let's see how I is going to get incremented is going to start with 1 and then it is going to get doubled which means 2 and then 4 and then so on so till we reach a value where we reach hit n let us say it is going to take K K iterations by the time we reach n which means I is going to be 1 initially which is nothing but 2 power 0 and then 2 power 1 and then 2 part 2 so on let us say 2 power K at this point no 2 power K is equal to n and we stopped then how many times does it get executed is when 2 power k equal to n it is getting executed K times right this this loop this printer is going to be printed k times which means 0 to K minus 1 and when when actual value of this is 2 power K which is equal to n we are going to stop then what is the value of K that you know we get is K is going to be log n which means we are getting executed log n times therefore we can even say the total number of times it gets executed or time complexity is order of log n okay now so whenever you remember it whenever I is running from 1 to N and if I is incremented in terms of 2 then the time complexity is going to be log n base 2 right in instead of two if you had three then it is going to be log in base three in case in terms of you know in place of three if we had six then I is going to being then the time complexity is going to be log and base six so whatever it is you know in terms of this value this number you have to write log in base that number in case if it is long I'm going to get it commuted you know incremented in terms of ten then the for loop is going to executed log in base ten times okay so that depends on what the well what is the steps of increment here now depending on that question let's answer the the second question here depending on the first question see this for there are three variables ijk for I equal to n by 2 to n which means this I is going to be this I is going to run for n by 2 times from n by 2 to n means this one is going to run for n by 2 times and this one is going to run from for J equal to 1 by N 1 to N by 2 which means again this is going to run for n by 2 times and now this one this one for k equal to 1 to n K is getting incremented in steps of 2 we have already seen that if there is any such loop then that gets executed log and base 2 times right so there is no dependency every every loop is Benigno running independently therefore you need not unroll the loop you could directly stick you know take it and multiply like this so the total time that they get executed is that wind up get printed is n by 2 into n by 2 into log n base 2 therefore what is this total time order of n Square log in base 2 this is the total time okay see this example for I equal to n by 2 and I less than or equal to n I plus plus which means this outermost for loop is going to get executed n by 2 times exactly from n by 2 to n right and this one for I equal to one more thing it might be n by 2 plus 1 or minus 1 no there is a small small difference but however it is going to be order of n by 2 this one ok it has to be strictly less than n then only it is going to be n by 2 times but now understand that it is going to be n by 2 so this one for I equal to 1 I less than or equal to n it is going to be incremented in steps of 2 which means it is going to double it is not incrementing linearly so we have already seen that for such a loop it is going to be log n base 2 what if it is I is less than or equal to N by 2 then it will be log n by 2 base 2 right then this one is for k equal to 1 K less than or equal to 1 K equal to K into 2 which means K is again keeping on doubling until we reach n therefore even for this it is log n base 2 right so how many times will this printf be printed is n by 2 into log n into log n so that is nothing but n by 2 into log in base 2 whole square right so what is it it is order of n into log n base 2 whole square that is how we write it so order means we just remove the constants and we let the more significant term remain what is the most significant term here n into log and base to write and next one is look at this example assuming that n is greater than or equal to 2 which means n is going to start from 2 what will be the number of times this program will get you know this you know inner loop will get executed is initially when n equal to 2 n equal to 2 we enter the while loop once and by the time we come out of the while loop and will be 1 now n is not greater than 1 therefore it will stop there for only one time if n equal to 2 power 1 this while loop is getting executed only once if n equal to 2 power 2 which means 4 then we enter the while loop once by the time we come out of the while loop it will be 2 and again it will get executed once and by the time we come out of the while loop it will be 1 and we will not go do it anymore which means if an equal to two for two while loop will get executed two times if an equal to 2 power 3 which means 8 we enter the while loop once and by the time we come out of the while loop the value of n will be 2 part 2 and now again we enter the while loop once by the time we come out of this while loop the value will be 2 part 1 and again we enter it once by the time we come out of it the value will be 1 you are we are going to stop it therefore when the N value is 2 part 3 we are going to get it anyway get it executed exactly three times so assuming that N is a power of 2 and n equal to 2 power K we can say that it is going to get executed K times where K is log and base 2 isn't it if we assume that N is a power of 2 which means n equal to 2 power K then we can say that this loop is going to get executed K times therefore K is log and base 2 therefore the number of times this one get will get executed is blog and base 2 if n is not a power of 2 let us say n is 20 20 then we get V in enter it and then by the time we come out of the while loop the value of n will be 10 right and then we enter one more time by the time we come out of it value of yn will be 5 we enter it one more time by the time we come out of it value of it will be 2 we enter it one more time by the time we come out of it value of this will be 1 which means if n equal to 20 we get it executed four times which is nothing but log 20 base 2 right it is float by log 20 base 2 is four point something and it is getting exploited exactly 4 time therefore this so the time you can say is order of log and base 2 it is enough but you know even if you can put the flow then it is fine not an issue right so what you should understand here is when when we are trying to start from a value and when we are try to reach one not in steps of one but by dividing with two then it is going to be login based - what if this is the instead of two if it is five if it is fire then the answer will be log and base file if it is ten then the answer will be log and base 10 okay so this is an important model see this example for I equal to 1 I less than n I plus plus which means this loop is going to get executed n times and internally for J equal to 1 J less than n which means J is going to go from 1 to n but the steps of incrementing J depends on I which means there is a dependence between outer loop and in the loop whenever there is dependence you always try to unroll it unroll means for go for the value of Phi for each value of Phi how many times in the internal loop will get executed okay so initially when I equal to 1 what happens is J is going to get executed from 1 to N and the steps of increment is 1 therefore total number of times J is getting executed is n times therefore total number of times printf will be printed is this name will be printed in for I equal to 1 it is n times for I equal to 2 again J is going to get incremented from 1 to n fine but then the increment is in steps of 2 which means we will reach in foster in this case why because J equal to 1 then 3 then then 5 so on here J equal to 1 2 3 4 so on but here J equal to 1 3 5 7 so on which means J will get incremented very fast and the number of times this J loop will get agreement it is you know experience nearly and by 2 times because no we are not going to enter this and print Ravi for every type for every value of J we are going to print it only for the alternative values of J which means it will be near n by 2 times now for I equal to 3 again J will get executed from 1 to N but then the increment of J be in steps of three which means one four seven so on therefore it will even reach faster J will reach n very fast we and the number of first times we enter the loop is n by three times so on so whenever I equal to K then J has to run from 1 to n but then increment will be in steps of K therefore number of times to Nora we will be printed in and by K times and now when finally when I equal to en then J will run from 1 to N just in one step which means in first time the loop will be 1 first time J value will be 1 and second time J value will be n plus 1 which means it'll only get executed one time all right so if you read if you see this is n by n times if you see this the total number of times this printf will be printed is n into 1 plus 1 by 2 plus 1 by 3 plus so on plus 1 by n so this is nothing but login definition so login is nothing but 1 plus 1 by 2 plus 1 by 3 plus so on plus 1 by n therefore it is equal to order of n log n so that is the execution time of this so let us analyze this program n equal to 2 power 2 power K which means n is given as a fixed constant and n this value depends on K okay and for I equal to 1 I less than or equal to n I plus plus so I is running from 1 to n and it is incrementing in steps of 1 why because it is in I plus plus right therefore how many times will the out of a loop will get executed n times there is no change in it now coming to the internal loop for J equal to 2 J less than or equal to 1 J equal to J square so J is running from 2 to n but not in steps of 1 or steps off in a doubling it is actually getting squared every time J equal to J square so not to analyze this J value is depending on n so n is 2 power 2 power K so I not analyzed let's keep substituting the values of k for k equal to 1 let's see what happens for k equal to 1 what is the value of n value of n is 2 power 2 which is 4 right then how many times will this loop be entered is initially J equal to 2 and J is less than 4 yes J is less than 4 therefore it will be entered and then J equal to next time is J Square which means J equal to 4 then J is less than or equal to n s true why because J is less than or equal to 4 is less than or equal to 4 which means second time it will get entered and printf will get printed so when k equal to 1 then the total number of times we are printing this Ravi is 2 times then it and how many times will it get totally printed n times because n times we are going to hit this isn't it therefore it is 2 into n times in case if k equal to 2 then what happens is n value will be 2 power 2 power 2 which is nothing but 2 power 4 which is 16 and value will be 16 then initially J value will be 2 then the for loop will be entered once because 2 is less than or equal to 16 then J value will be squared which means for 4 is less than or equal to 16 one time it will again enter it and again 4 will be squared which means 16 then again we are going to enter one more time and then K will be 16 into 16 which will be greater than 16 therefore it will not enter therefore the number of times printf will be printed for a value of k equal to 2 is 3 times isn't it 3 times it will be printed and outer for loop will run always n times therefore it is going to be printed totally n into K time n into this this many times when k equal to 2 when k equal to 3 let us see how many times this 1 this n turn away we enter row J loop and print Ravi so n equal to to power to power 3 which is nothing but to power 8 right so J will be initially 2 will enter the value ones then J will be 2 square will enter the value ones then J will be 2 power 4 will enter the value ones then J will be 2 power 8 to power 8 is less than or equal to 2 power 8 we enter once next time it will be 2 power 16 which will be greater than this therefore we will not enter it so how many times are we going to enter this J loop and print reveals 1 2 3 4 which means if k equal to 3 we are going to enter 4 times 4 times and whatever this one this one will already get X now executing n times therefore total it is n into 4 times C outer for loop there is no change n times always n times but then inner loop that depends on the value of K how is it depending if k equal to 1 it is getting executed 2 times if k equal to 2 it is getting executed three times if k equal to 3 it is getting executed four times therefore if K value is K itself then how many times it will get executed is how tough our loop will get executed n times and then in the J loop will get executed k plus 1 times therefore this is the total number of times this entire this printer will be printed then I want the answer if I want the answer in terms of K only n not in terms of K if you want the answer in terms of K then you can substitute inflow in place of n to power 2 power K if I want the answer in terms of n then what you should do is convert it so n equal to 2 power 2 power K apply log on both sides that implies log n equal to 2 power K log in base 2 right that implies log log n equal to K therefore k equal to log log n so K here we get it as log log n so that equal to n into log log n plus 1 so what is the leading term here leading term is n into log log n so total expression is n into log log n plus n so in which the leading term is n into log log n therefore you can say that the time complexity is n into log log n okay so this is the time complexity of this algorithm fine
+                                 </p>
+                            </div>
+                            
+                            
+                            
+                           
+                            
+                        </div>
+                    </div>
+                </div>
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
               <div class="card card-chart">
                   <div class="card-header card-header-danger">
                       <div class="ct-chart" id="completedTasksChart"></div>
@@ -624,7 +746,7 @@
                       </div>
                   </div>
               </div>
-          </div>
+          </div> -->
       </div>
       
   </div>

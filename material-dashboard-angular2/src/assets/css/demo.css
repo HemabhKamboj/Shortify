@@ -24,6 +24,8 @@
   width: 260px;
 }
 
-#video-brdr{
+/* #video-brdr{
   border: 2px solid red;
-}
+} */
+
+.stop{width:500px;}

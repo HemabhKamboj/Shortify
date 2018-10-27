@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,6 +10,13 @@ import * as Chartist from 'chartist';
 export class DashboardComponent implements OnInit {
 
   constructor() { }
+  registerUser(form: NgForm) {
+    console.log('Hi from Shortify')
+    console.log(form.value);
+    JSON.stringify(form.value);
+    // {email: '...', password: '...'}
+    // ... <-- now use JSON.stringify() to convert form values to json.
+  }
   startAnimationForLineChart(chart){
       let seq: any, delays: any, durations: any;
       seq = 0;
