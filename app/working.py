@@ -9,7 +9,7 @@ video = 't1.mp4'
 
 image_folder = dir
 video_name = 'final2.avi'
-#
+
 if os.path.exists(dir):
     shutil.rmtree(dir)
 os.makedirs(dir)
