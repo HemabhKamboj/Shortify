@@ -1,5 +1,3 @@
-# HashHacks3_dhruvbhatnagar10458
-
 # ***Shortify***
 ## ***Faster than 4x***
  Shortify provides summary of the video contents and also generates a shorter version of it by cropping it, depending upon some frames which are chosen 
@@ -28,7 +26,7 @@ For instance, you are preparing for an exam but you have very less time, so ever
 * NLP
 * OpenCV
 
-## Contributors
+## Contributors (in alphabetical order)
 * Dhruv Bhatnagar
 * Hemabh Kamboj
 * Kumar Kartikeya
