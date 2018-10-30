@@ -15,9 +15,9 @@ We provide a facility in the form of a Web Application where the user can upload
 
 For instance, you are preparing for an exam but you have very less time, so every minute of your time is valuable. Sitting for hours looking at your screen can be tiring and to be honest VERY BORING. Why waste hours watching it when you can learn it in a few minutes?
 
-## Themes 
-* Algorithms 
-* Artificial Intelligence
+
+
+
   
 ## Tech Stack
 * AngularJS
