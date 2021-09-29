@@ -10,7 +10,7 @@ iso-639==0.4.5
 iso3166==0.9
 isodate==0.6.0
 jmespath==0.9.3
-nltk==3.3
+nltk==3.6.3
 numpy==1.15.3
 opencv-python==3.4.3.18
 pafy==0.5.4
